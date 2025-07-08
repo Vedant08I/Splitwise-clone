@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Splitwise Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Splitwise Clone</h1>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Groups</h2>
+      <ul>
+        <li>Friends</li>
+        <li>Trip to Goa</li>
+        <li>Flatmates</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Expenses</h2>
+
+      <div id="expenses">
+        <!-- Expenses will appear here -->
+      </div>
+
+      <h3>Add New Expense</h3>
+      <form id="expense-form">
+        <input type="text" id="desc" placeholder="Description" required><br>
+        <input type="number" id="amount" placeholder="Amount ₹" required><br>
+        <input type="text" id="paidBy" placeholder="Paid By" required><br>
+        <input type="text" id="splitWith" placeholder="Split With (comma separated)" required><br>
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <h3>Balance Sheet</h3>
+      <div id="balances">
+        <!-- Balances appear here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
